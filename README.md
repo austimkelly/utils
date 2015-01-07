@@ -19,6 +19,8 @@ Some utils require ImageMagick. If needed, install with the following steps on O
 create_app_launcher_icons.sh
 ======
 
+Resize in input PNG file and create iPhone, iPad, and Android icons
+
 *Pre-requisite*: ImageMagick
 
 Example:
@@ -29,3 +31,13 @@ Example:
 
 3) See resized icons in `./out_icons` directory
 
+mask_images.sh
+=======
+
+Takes a folder of input PNG images, and applies a flat mask. Use this for simple, single color flat icons with transparency.
+
+*Pre-requisite: ImageMagick
+
+Example:
+
+$sh mask_images.sh A42838 ./test_input_icons ./out_icons
